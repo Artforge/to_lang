@@ -17,11 +17,11 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency "httparty", "~> 0.11.0"
-  s.add_development_dependency "rake", "=> 0.9.2"
-  s.add_development_dependency "rspec", "=> 2.6.0"
+  s.add_development_dependency "rake", ">= 0.9.2"
+  s.add_development_dependency "rspec", ">= 2.6.0"
   s.add_development_dependency "simplecov", "~> 0.5.3"
   s.add_development_dependency "RedCloth", "~> 4.2.8"
   s.add_development_dependency "guard-rspec", "~> 0.4.5"
-  s.add_development_dependency "rb-fsevent", "=> 0.4.3" if RUBY_PLATFORM[/darwin/]
+  s.add_development_dependency "rb-fsevent", ">= 0.4.3" if RUBY_PLATFORM[/darwin/]
   s.add_development_dependency "growl_notify", "~> 0.0.1" if RUBY_PLATFORM[/darwin/]
 end
